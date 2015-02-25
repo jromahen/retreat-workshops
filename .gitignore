@@ -109,6 +109,10 @@ sympy-plots-for-*.tex/
 *.xdy
 
 # Emacs files
+*.*~
+.*~
+#*.*#
+#.*#
 # Mac files
 .DS_Store
 ._*
