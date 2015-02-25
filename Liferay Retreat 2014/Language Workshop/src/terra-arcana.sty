@@ -1,0 +1,83 @@
+\usepackage{fontspec}
+\usepackage[xetex]{hyperref}
+\usepackage{memhfixc}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[normalem]{ulem}
+
+%%%%%%%%%%%% Path Setup %%%%%%%%%%%%%
+\input{./ta-conf}
+
+%%%%%%%%%%%% Branding %%%%%%%%%%%%%%%&
+\newfontfamily\brand[Style=Historic]{Junicode}
+\newcommand{\publishermark}{
+{\brand
+\small{
+\textsc{\addfontfeature{Alternate=2,Style=Swash} Terra Arcana}
+\rule{12pt}{0.25cm}
+}
+\tiny{Publishing Co.}
+}
+}
+
+\newcommand{\publishercopy}{
+\vspace{\fill}
+\begin{flushright}
+\publishermark \\
+\small{Designed in Diamond Bar, CA}\\
+\tiny{Printed \& Published in the United States of America}
+\end{flushright}
+}
+
+%%%%% Blank Page macro %%%%%%
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+
+%%%%% Creative Commons macros %%%%%
+\newcommand{\ccbyncsa}{{
+\includegraphics[scale=0.5]{cc-logo-large} \\
+\vfill
+\parbox{300pt}{
+\small
+\copyright{} Copyright 2014 \theauthor\\
+
+This work is licensed under the \textit{Creative Commons Attribution 4.0 International License}. To view a copy of this license, visit \\
+\texttt{http://creativecommons.org/licenses/by-nc-sa/4.0/}.
+} \\
+\\
+\vspace{0.2cm} \\
+\begin{center}
+\includegraphics[scale=0.1]{cc-large}
+\includegraphics[scale=0.1]{by-large}
+\includegraphics[scale=0.1]{nc-large}
+\includegraphics[scale=0.1]{sa-large}
+\end{center}
+\vfill}
+}
+
+
+\newcommand{\ccby}{{
+\includegraphics[scale=0.5]{cc-logo-large} \\
+\vfill
+\parbox{300pt}{
+\small
+\copyright{} Copyright 2014 \theauthor\\
+
+This work is licensed under the \textit{Creative Commons Attribution 4.0 International License}. To view a copy of this license, visit \\
+\texttt{http://creativecommons.org/licenses/by/4.0/}.
+} \\
+\\
+\vspace{0.2cm} \\
+\begin{center}
+\includegraphics[scale=0.1]{cc-large}
+\includegraphics[scale=0.1]{by-large}
+\end{center}
+\vfill}
+}
+
+
